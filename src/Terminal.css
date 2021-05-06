@@ -1,0 +1,15 @@
+.Terminal {
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Courier New;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.Terminal__Line {
+}
+.Terminal__Line-prompt {
+  color: #33ff33;
+}
