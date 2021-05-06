@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Terminal.css";
 
 const parseText = (text) => {
-  text = text.replace(/\t/g, "&nbsp;&nbsp;");
   text = text.replace(/</g, "&lt;");
   text = text.replace(/>/g, "&gt;");
-
+  text = text.replace(/ /g, "&nbsp;");
   text = text.replace(/\n/g, "<br />");
   return text;
 };
